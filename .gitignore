@@ -1,0 +1,43 @@
+# Ignore executable files
+*.exe
+
+# Ignore debug symbols
+*.dsym
+
+# Ignore the main executable (if generated)
+main
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore build artifacts
+/build/
+*.dll
+
+# Ignore macOS files
+.DS_Store
+
+# Ignore compiled dynamic libraries
+*.so
+
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore compiled static libraries
+*.a
+*.lib
+
+# Ignore debug and release directories
+Debug/
+Release/
+
+# Ignore temporary files
+*.tmp
+*~
+
+# Ignore swap files
+*.swp
+
+# Ignore log files
+*.log

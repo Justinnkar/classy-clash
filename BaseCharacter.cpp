@@ -2,8 +2,8 @@
 
 BaseCharacter::BaseCharacter()
 {
-
-};
+    
+}
 
 void BaseCharacter::undoMovement()
 {
@@ -15,8 +15,8 @@ Rectangle BaseCharacter::getCollisionRec()
     return Rectangle{
         screenPos.x,
         screenPos.y,
-        scale * width,
-        scale * height
+        width * scale,
+        height * scale
     };
 }
 
@@ -24,7 +24,7 @@ void BaseCharacter::tick(float deltaTime)
 {
     worldPosLastFrame = worldPos;
 
-        // update animation frame
+    // update animation frame
     runningTime += deltaTime;
     if (runningTime >= updateTime)
     {
@@ -33,6 +33,7 @@ void BaseCharacter::tick(float deltaTime)
         if (frame > maxFrames)
             frame = 0;
     }
+
     // draw the character
     Rectangle source{frame * width, 0.f, rightLeft * width, height};
     Rectangle dest{screenPos.x, screenPos.y, scale * width, scale * height};

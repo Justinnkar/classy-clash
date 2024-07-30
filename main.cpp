@@ -28,7 +28,7 @@ int main()
         LoadTexture("textures/characters/goblin_idle_spritesheet.png"),
         LoadTexture("textures/characters/goblin_run_spritesheet.png")
         };
-
+    goblin.setTarget(&knight);
 
     SetTargetFPS(60);
     while (!WindowShouldClose())

@@ -8,7 +8,7 @@ int main()
 {
     const int windowWidth{384};
     const int windowHeight{384};
-    InitWindow(windowWidth, windowHeight, "Stephen's Top Down");
+    InitWindow(windowWidth, windowHeight, "Justin's Top Down");
 
     Texture2D map = LoadTexture("nature_tileset/OpenWorldMap24x24.png");
     Vector2 mapPos{0.0, 0.0};
